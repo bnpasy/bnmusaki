@@ -1,0 +1,2092 @@
+<html lang="id"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Algoritma Pemrograman</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="p.css">
+</head>
+
+<body>
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">
+☰
+</button>
+
+<!-- ========================= -->
+<!-- SIDEBAR -->
+<!-- ========================= -->
+
+<aside class="sidebar" id="sidebar">
+
+<div class="sidebar-logo">
+
+<span class="badge">
+MATA KULIAH
+</span>
+
+<h1>
+Algoritma <br>
+Pemrograman
+</h1>
+
+</div>
+
+<nav class="nav-section">
+
+<div class="nav-label">
+NAVIGASI
+</div>
+
+<a href="#toc" class="nav-item active">
+<span class="num">00</span>
+Daftar Isi
+</a>
+
+<a href="#sec2" class="nav-item">
+<span class="num">01</span>
+Struktur Dasar &amp; Notasi
+</a>
+
+<a href="#sub-sekuensial" class="nav-sub">
+→ Sekuensial
+</a>
+
+<a href="#sub-seleksi" class="nav-sub">
+→ Seleksi
+</a>
+
+<a href="#sub-perulangan" class="nav-sub">
+→ Perulangan
+</a>
+
+<a href="#sub-notasi" class="nav-sub">
+→ Notasi Algoritmik
+</a>
+
+<a href="#sub-tipe" class="nav-sub">
+→ Tipe Dasar
+</a>
+
+<a href="#sub-ekspresi" class="nav-sub">
+→ Ekspresi
+</a>
+
+<a href="#sub-harga" class="nav-sub">
+→ Harga &amp; Assignment
+</a>
+
+<a href="#sub-io" class="nav-sub">
+→ Input / Output
+</a>
+
+<a href="#sec3" class="nav-item">
+<span class="num">02</span>
+Karakteristik Algoritma
+</a>
+
+<a href="#tugas1" class="nav-sub">
+→ Tugas 1
+</a>
+
+<a href="#tugas2" class="nav-sub">
+→ Tugas 2
+</a>
+
+<a href="#sec4" class="nav-item">
+<span class="num">03</span>
+Struktur Sekuensial
+</a>
+
+<a href="#sub-seq-tugas" class="nav-sub">
+→ Tugas Sekuensial
+</a>
+
+<a href="#sec5" class="nav-item">
+<span class="num">04</span>
+Perulangan
+</a>
+
+<a href="#sub-for" class="nav-sub">
+→ FOR
+</a>
+
+<a href="#sub-while" class="nav-sub">
+→ WHILE
+</a>
+
+<a href="#sub-dowhile" class="nav-sub">
+→ DO WHILE
+</a>
+
+<a href="#sub-nested" class="nav-sub">
+→ NESTED LOOP
+</a>
+
+<a href="#sec6" class="nav-item">
+  <span class="num">05</span> Array
+</a>
+
+
+<a href="#sub-array-tugas" class="nav-sub">→ Tugas Array</a>
+<a href="#sub-array-macam" class="nav-sub">→ Macam-Macam Array</a>
+
+</nav>
+
+</aside>
+
+<!-- ========================= -->
+<!-- MAIN -->
+<!-- ========================= -->
+
+<main class="main">
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section class="hero">
+<h1>
+Algoritma <br>
+<span>Pemrograman</span>
+</h1>
+
+<p>
+Pelajari konsep dasar algoritma, notasi algoritmik,
+struktur dasar, struktur sekuensial, perulangan,
+array, serta implementasinya dalam bahasa pemrograman.
+</p>
+
+<div class="author-box">
+
+<div class="author-label">
+DIBUAT OLEH
+</div>
+
+<div class="author-name">
+BN Muzakki Pasyah 
+</div>
+
+<div class="author-nim">
+NIM : 250403010047
+</div>
+
+</div>
+
+<div class="hero-stats">
+
+<div class="stat">
+<div class="stat-num">6</div>
+<div class="stat-label">Bab Materi</div>
+</div>
+
+<div class="stat">
+<div class="stat-num">4</div>
+<div class="stat-label">Tugas</div>
+</div>
+
+</div>
+
+</section>
+
+<div class="content">
+
+<!-- ========================= -->
+<!-- DAFTAR ISI -->
+<!-- ========================= -->
+
+<section class="section" id="toc">
+
+<div class="section-header">
+
+<div class="section-num">
+00
+</div>
+
+<div class="section-title">
+<h2>Daftar Isi</h2>
+<p>Navigasi seluruh materi pembelajaran</p>
+</div>
+
+</div>
+
+<div class="toc-grid">
+
+<a href="#sec2" class="toc-card">
+
+<div class="toc-icon blue">
+🧱
+</div>
+
+<div>
+<h3>Struktur Dasar &amp; Notasi Algoritmik</h3>
+
+<p>
+Sekuensial, seleksi, perulangan,
+notasi algoritmik, tipe data,
+ekspresi, assignment, dan I/O.
+</p>
+</div>
+
+</a>
+
+<a href="#sec3" class="toc-card">
+
+<div class="toc-icon purple">
+🔍
+</div>
+
+<div>
+<h3>Struktur dan Karakteristik Algoritma</h3>
+
+<p>
+Tugas kehidupan sehari-hari,
+algoritma, program,
+dan bahasa Java.
+</p>
+</div>
+
+</a>
+
+<a href="#sec4" class="toc-card">
+
+<div class="toc-icon green">
+🔄
+</div>
+
+<div>
+<h3>Struktur Algoritma Sekuensial</h3>
+
+<p>
+Ciri-ciri, pseudocode,
+flowchart, dan implementasi Python.
+</p>
+</div>
+
+</a>
+
+<a href="#sec5" class="toc-card">
+
+<div class="toc-icon orange">
+🔁
+</div>
+
+<div>
+<h3>Perulangan</h3>
+
+<p>
+FOR, WHILE,
+DO WHILE,
+dan NESTED LOOP.
+</p>
+</div>
+
+</a>
+
+<a href="#sec6" class="toc-card">
+
+<div class="toc-icon teal">
+📦
+</div>
+
+<div>
+<h3>Array</h3>
+
+<p>
+Pengertian array,
+array 1 dimensi,
+2 dimensi,
+dan multidimensi.
+</p>
+</div>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BAB 1 -->
+<!-- ========================= -->
+
+<section class="section" id="sec2">
+
+<div class="section-header">
+
+<div class="section-num">
+01
+</div>
+
+<div class="section-title">
+<h2>
+Struktur Dasar Algoritma &amp;
+Notasi Algoritmik
+</h2>
+
+<p>
+Kerangka penyelesaian masalah
+secara sistematis.
+</p>
+
+</div>
+
+</div>
+
+<p>
+Struktur dasar algoritma adalah pola yang digunakan
+untuk menyusun langkah-langkah penyelesaian masalah.
+Terdapat tiga struktur dasar yaitu
+Sekuensial, Seleksi, dan Perulangan.
+</p>
+
+<!-- SEKUENSIAL -->
+
+<div class="subsection" id="sub-sekuensial">
+
+<h4>a. Sekuensial (Urutan)</h4>
+
+<p>
+Instruksi dijalankan secara berurutan
+dari atas ke bawah.
+</p>
+
+<div class="code-label">
+Contoh Algoritma
+</div>
+
+<pre>1. Masukkan panjang
+2. Masukkan lebar
+3. Hitung luas = panjang × lebar
+4. Tampilkan luas
+</pre>
+
+</div>
+
+<!-- SELEKSI -->
+
+<div class="subsection purple" id="sub-seleksi">
+
+<h4>b. Seleksi (Percabangan)</h4>
+
+<p>
+Digunakan untuk memilih tindakan
+berdasarkan kondisi tertentu.
+</p>
+
+<pre>if nilai &gt;= 75
+    Maka "Lulus"
+
+else:
+   Maka "Tidak Lulus"
+</pre>
+
+</div>
+
+<!-- PERULANGAN -->
+
+<div class="subsection green" id="sub-perulangan">
+
+<h4>c. Perulangan (Looping)</h4>
+
+<p>
+Digunakan untuk mengulang proses
+beberapa kali.
+</p>
+
+<pre>Untuk i = 1 sampai 5
+    Tampilkan "Hello"
+</pre>
+
+</div>
+
+<!-- ========================= -->
+<!-- NOTASI ALGORITMIK -->
+<!-- ========================= -->
+
+<div class="card" id="sub-notasi">
+
+<div class="card-title">
+<span class="dot"></span>
+2. Notasi Algoritmik (Skema)
+</div>
+
+<p>
+Notasi algoritmik adalah cara menuliskan algoritma
+agar mudah dipahami manusia sebelum diterjemahkan
+ke dalam bahasa pemrograman.
+</p>
+
+<div class="code-label">
+Contoh Notasi Algoritmik
+</div>
+
+<pre>Algoritma Luas Persegi Panjang
+
+Deklarasi
+panjang, lebar, luas : integer
+
+Deskripsi
+Input panjang
+Input lebar
+luas ← panjang × lebar
+Output luas
+</pre>
+
+<div class="summary-box">
+
+<div class="summary-item">
+<b>Judul Algoritma</b>
+<p>Nama algoritma yang dibuat.</p>
+</div>
+
+<div class="summary-item">
+<b>Deklarasi Variabel</b>
+<p>Daftar variabel yang digunakan.</p>
+</div>
+
+<div class="summary-item">
+<b>Deskripsi</b>
+<p>Langkah-langkah penyelesaian masalah.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- TIPE DASAR -->
+<!-- ========================= -->
+
+<div class="card" id="sub-tipe">
+
+<div class="card-title">
+<span class="dot purple"></span>
+3. Tipe Dasar
+</div>
+
+<p>
+Tipe data digunakan untuk menentukan
+jenis nilai yang dapat disimpan oleh variabel.
+</p>
+
+<table>
+
+<tbody><tr>
+<th>Tipe Data</th>
+<th>Keterangan</th>
+<th>Contoh</th>
+</tr>
+
+<tr>
+<td>Integer</td>
+<td>Bilangan Bulat</td>
+<td>10, 25, -5</td>
+</tr>
+
+<tr>
+<td>Float</td>
+<td>Bilangan Desimal</td>
+<td>3.14, 7.5</td>
+</tr>
+
+<tr>
+<td>Character</td>
+<td>Satu Karakter</td>
+<td>'A'</td>
+</tr>
+
+<tr>
+<td>String</td>
+<td>Kumpulan Karakter</td>
+<td>"Halo"</td>
+</tr>
+
+<tr>
+<td>Boolean</td>
+<td>Nilai Logika</td>
+<td>True, False</td>
+</tr>
+
+</tbody></table>
+
+<div class="code-label">
+Contoh Deklarasi
+</div>
+
+<pre>umur : integer
+nama : string
+ipk : real
+</pre>
+
+</div>
+
+<!-- ========================= -->
+<!-- EKSPRESI -->
+<!-- ========================= -->
+
+<div class="card" id="sub-ekspresi">
+
+<div class="card-title">
+<span class="dot green"></span>
+4. Ekspresi
+</div>
+
+<p>
+Ekspresi adalah gabungan nilai,
+variabel, dan operator
+yang menghasilkan suatu nilai.
+</p>
+
+<div class="subsection">
+
+<h4>Ekspresi Aritmatika</h4>
+
+<pre>10 + 5
+20 / 4
+a * b
+</pre>
+
+</div>
+
+<div class="subsection purple">
+
+<h4>Ekspresi Relasional</h4>
+
+<pre>nilai &gt; 75
+umur &lt;= 18
+nilai == 100
+</pre>
+
+</div>
+
+<div class="subsection green">
+
+<h4>Ekspresi Logika</h4>
+
+<pre>A and B
+A or B
+not A
+</pre>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- HARGA DAN ASSIGNMENT -->
+<!-- ========================= -->
+
+<div class="card" id="sub-harga">
+
+<div class="card-title">
+<span class="dot orange"></span>
+5. Harga (Value)
+</div>
+
+<p>
+Harga atau value adalah nilai
+yang dimiliki suatu variabel.
+</p>
+
+<pre>umur ← 20
+
+Variabel = umur
+Nilai = 20
+</pre>
+
+<pre>nama ← "Budi"
+</pre>
+
+<p>
+Harga dari variabel nama adalah
+"Budi".
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot teal"></span>
+6. Assignment (Penugasan)
+</div>
+
+<p>
+Assignment adalah proses memberikan
+nilai kepada variabel.
+</p>
+
+<pre>nilai ← 80
+
+jumlah ← 10 + 5
+
+jumlah = 15
+</pre>
+
+</div>
+
+<!-- ========================= -->
+<!-- INPUT OUTPUT -->
+<!-- ========================= -->
+
+<div class="card" id="sub-io">
+
+<div class="card-title">
+<span class="dot green"></span>
+7. Input / Output
+</div>
+
+<div class="two-column">
+
+<div>
+
+<h4>Input</h4>
+
+<p>
+Input adalah data yang dimasukkan
+oleh pengguna ke dalam program.
+</p>
+
+<div class="code-label">
+Pseudocode
+</div>
+
+<pre>Input nama
+Input umur
+</pre>
+
+<div class="code-label">
+Python
+</div>
+
+<pre>nama = input("Masukkan nama : ")
+
+umur = int(
+input("Masukkan umur : ")
+)
+</pre>
+
+</div>
+
+<div>
+
+<h4>Output</h4>
+
+<p>
+Output adalah hasil yang
+ditampilkan program.
+</p>
+
+<div class="code-label">
+Pseudocode
+</div>
+
+<pre>Output nama
+Output umur
+</pre>
+
+<div class="code-label">
+Python
+</div>
+
+<pre>print("Nama :", nama)
+
+print("Umur :", umur)
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- RINGKASAN -->
+<!-- ========================= -->
+
+<div class="summary-card">
+
+<div class="s-row">
+<div class="s-key">Struktur Dasar</div>
+<div class="s-val">
+Sekuensial, Seleksi, dan Perulangan
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">Notasi Algoritmik</div>
+<div class="s-val">
+Cara menuliskan langkah algoritma
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">Tipe Dasar</div>
+<div class="s-val">
+Jenis data yang digunakan
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">Ekspresi</div>
+<div class="s-val">
+Gabungan nilai dan operator
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">Assignment</div>
+<div class="s-val">
+Pemberian nilai ke variabel
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">Input / Output</div>
+<div class="s-val">
+Masukan dan keluaran program
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BAB 2 : KARAKTERISTIK -->
+<!-- ========================= -->
+
+<section class="section" id="sec3">
+
+<div class="section-header">
+
+<div class="section-num">
+02
+</div>
+
+<div class="section-title">
+<h2>
+Algoritma : Struktur dan Karakteristik
+</h2>
+
+<p>
+Tugas dan pendalaman konsep algoritma
+serta pemrograman.
+</p>
+
+</div>
+
+</div>
+
+<!-- TUGAS 1 -->
+
+<div id="tugas1">
+
+<div class="big-title">
+📝 TUGAS 1
+</div>
+
+<!-- ATM -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot"></span>
+1. Mengambil Uang di ATM
+</div>
+
+<ol class="step-list">
+
+<li>Mulai</li>
+<li>Datang ke mesin ATM</li>
+<li>Masukkan kartu ATM</li>
+<li>Pilih bahasa</li>
+<li>Masukkan PIN</li>
+<li>Pilih menu Tarik Tunai</li>
+<li>Pilih nominal uang</li>
+<li>Sistem memproses transaksi</li>
+<li>Ambil uang yang keluar</li>
+<li>Ambil kartu ATM</li>
+<li>Transaksi selesai</li>
+
+</ol>
+
+</div>
+
+<!-- KOPI -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot purple"></span>
+2. Membuat Kopi yang Rasa Manis dan Pahitnya Pas
+</div>
+
+<ol class="step-list">
+
+<li>Mulai</li>
+<li>Siapkan gelas, sendok, kopi, gula dan air panas</li>
+<li>Masukkan 1 sendok kopi</li>
+<li>Tambahkan gula secukupnya</li>
+<li>Tuang air panas</li>
+<li>Aduk hingga tercampur</li>
+<li>Cicipi kopi</li>
+<li>Jika terlalu pahit tambahkan gula</li>
+<li>Jika terlalu manis tambahkan air atau kopi</li>
+<li>Aduk kembali</li>
+<li>Kopi siap diminum</li>
+
+</ol>
+
+</div>
+
+<!-- Y = 3X + 6 -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot green"></span>
+3. Menghitung Nilai y = 3x + 6
+</div>
+
+<ol class="step-list">
+
+<li>Mulai</li>
+<li>Tentukan nilai x</li>
+<li>Kalikan x dengan 3</li>
+<li>Tambahkan hasil dengan 6</li>
+<li>Hasil akhir adalah nilai y</li>
+
+</ol>
+
+</div>
+
+<!-- ALGORITMA VS PROGRAM -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot orange"></span>
+2. Pengertian Algoritma dan Program
+</div>
+
+<div class="two-column">
+
+<div class="subsection">
+
+<h4>Algoritma</h4>
+
+<p>
+Langkah-langkah logis,
+terstruktur, dan sistematis
+untuk menyelesaikan suatu masalah.
+</p>
+
+</div>
+
+<div class="subsection green">
+
+<h4>Program</h4>
+
+<p>
+Implementasi dari algoritma
+dalam bentuk kode menggunakan
+bahasa pemrograman sehingga dapat
+dijalankan oleh komputer.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- STRUKTUR DASAR -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot teal"></span>
+3. Struktur Dasar Algoritma
+</div>
+
+<div class="char-grid">
+
+<div class="char-item">
+<div class="icon">1️⃣</div>
+<div>
+<div class="label">Sekuensial</div>
+<div class="desc">
+Instruksi dijalankan berurutan
+tanpa lompatan.
+</div>
+</div>
+</div>
+
+<div class="char-item">
+<div class="icon">2️⃣</div>
+<div>
+<div class="label">Pemilihan</div>
+<div class="desc">
+Mengambil keputusan berdasarkan
+kondisi tertentu.
+</div>
+</div>
+</div>
+
+<div class="char-item">
+<div class="icon">3️⃣</div>
+<div>
+<div class="label">Perulangan</div>
+<div class="desc">
+Mengulang proses berdasarkan
+kondisi tertentu.
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- JAVA -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot purple"></span>
+4. Fungsi Bahasa Pemrograman Java
+</div>
+
+<p>
+
+Bahasa pemrograman Java digunakan
+untuk membuat berbagai jenis aplikasi
+seperti aplikasi desktop, web,
+dan mobile.
+
+</p>
+
+<p>
+
+Java bersifat platform independent
+(write once run anywhere),
+mendukung konsep OOP,
+serta memiliki keamanan yang baik.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ==================== -->
+<!-- TUGAS 2 -->
+<!-- ==================== -->
+
+<div id="tugas2">
+
+<div class="big-title">
+📝 TUGAS 2
+</div>
+
+<!-- PRIMITIF -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot"></span>
+1. Tipe Data Primitif dan Non-Primitif
+</div>
+
+<div class="two-column">
+
+<div class="subsection">
+
+<h4>Primitif</h4>
+
+<p>
+Tipe data bawaan yang menyimpan
+satu nilai langsung di memori.
+</p>
+
+<div class="tag-group">
+
+<span class="tag">int</span>
+<span class="tag">float</span>
+<span class="tag">char</span>
+<span class="tag">boolean</span>
+<span class="tag">byte</span>
+<span class="tag">long</span>
+<span class="tag">short</span>
+
+</div>
+
+</div>
+
+<div class="subsection purple">
+
+<h4>Non-Primitif</h4>
+
+<p>
+Tipe data referensi yang lebih
+kompleks dan fleksibel.
+</p>
+
+<div class="tag-group">
+
+<span class="tag purple-tag">String</span>
+<span class="tag purple-tag">Array</span>
+<span class="tag purple-tag">Class</span>
+<span class="tag purple-tag">Interface</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- VARIABEL SALAH -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot green"></span>
+2. Kesalahan Penulisan Variabel
+</div>
+
+<div class="code-label">
+Penulisan Salah
+</div>
+
+<pre>Int 5angka;
+String nama siswa;
+Int static;
+</pre>
+
+<div class="alert">
+
+<b>Kesalahan:</b>
+
+<ul>
+
+<li>Int seharusnya int</li>
+<li>Nama variabel tidak boleh diawali angka</li>
+<li>Nama variabel tidak boleh mengandung spasi</li>
+<li>static adalah keyword Java</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- ARRAY JAVA -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot orange"></span>
+3. Deklarasi Array Java
+</div>
+
+<pre>int[] nilai = {80, 90, 100};
+</pre>
+
+<p>
+Array digunakan untuk menyimpan
+banyak data bertipe sama
+dalam satu variabel.
+</p>
+
+</div>
+
+<!-- OPERATOR -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot teal"></span>
+4. Operator Aritmatika Java
+</div>
+
+<table>
+
+<tbody><tr>
+<th>Operator</th>
+<th>Fungsi</th>
+</tr>
+
+<tr>
+<td>+</td>
+<td>Penjumlahan</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>Pengurangan</td>
+</tr>
+
+<tr>
+<td>*</td>
+<td>Perkalian</td>
+</tr>
+
+<tr>
+<td>/</td>
+<td>Pembagian</td>
+</tr>
+
+<tr>
+<td>%</td>
+<td>Modulus</td>
+</tr>
+
+</tbody></table>
+
+</div>
+
+<!-- PEMBAGIAN -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot purple"></span>
+5. Contoh Operator Pembagian Python
+</div>
+
+<pre>a = 10;
+b = 2;
+
+hasil = a / b;
+
+print("Hasil pembagian : ", hasil)
+</pre>
+
+<div class="alert">
+
+Output :
+
+<pre>Hasil pembagian : 5
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BAB 3 : STRUKTUR SEKUENSIAL -->
+<!-- ========================= -->
+
+<section class="section" id="sec4">
+
+<div class="section-header">
+
+<div class="section-num">
+03
+</div>
+
+<div class="section-title">
+
+<h2>
+Struktur Algoritma Sekuensial
+</h2>
+
+<p>
+Instruksi berurutan tanpa percabangan
+dan tanpa perulangan.
+</p>
+
+</div>
+
+</div>
+
+<p>
+Instruksi pada algoritma adalah perintah atau langkah-langkah
+yang harus dijalankan secara sistematis untuk menyelesaikan
+suatu masalah.
+</p>
+
+<p>
+Struktur sekuensial adalah struktur algoritma yang dijalankan
+secara berurutan dari atas ke bawah tanpa percabangan
+dan tanpa perulangan.
+</p>
+
+<!-- CIRI-CIRI -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot"></span>
+Ciri-ciri Struktur Sekuensial
+</div>
+
+<div class="char-grid">
+
+<div class="char-item">
+<div class="icon">📌</div>
+<div>
+<div class="label">Berurutan</div>
+<div class="desc">
+Langkah dikerjakan dari atas ke bawah.
+</div>
+</div>
+</div>
+
+<div class="char-item">
+<div class="icon">🚫</div>
+<div>
+<div class="label">Tanpa Percabangan</div>
+<div class="desc">
+Tidak menggunakan IF atau ELSE.
+</div>
+</div>
+</div>
+
+<div class="char-item">
+<div class="icon">🔁</div>
+<div>
+<div class="label">Tanpa Perulangan</div>
+<div class="desc">
+Tidak menggunakan loop.
+</div>
+</div>
+</div>
+
+<div class="char-item">
+<div class="icon">1️⃣</div>
+<div>
+<div class="label">Satu Kali Eksekusi</div>
+<div class="desc">
+Setiap instruksi dijalankan satu kali.
+</div>
+</div>
+</div>
+
+<div class="char-item">
+<div class="icon">📖</div>
+<div>
+<div class="label">Mudah Dipahami</div>
+<div class="desc">
+Alur sederhana dan linear.
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- CONTOH KELILING PERSEGI -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot green"></span>
+Contoh Struktur Sekuensial
+</div>
+
+<p>
+Menghitung Keliling Persegi
+</p>
+
+<pre>1. Mulai
+2. Masukkan panjang sisi (S)
+3. Hitung keliling
+
+   K = 4 × S
+
+4. Tampilkan K
+5. Selesai
+</pre>
+
+</div>
+
+<!-- TUGAS -->
+
+<div id="sub-seq-tugas">
+
+<div class="big-title">
+📝 Tugas Sekuensial
+</div>
+
+<div class="card">
+    <div class="card-title">
+        <span class="dot"></span>Notasi Deskriptif
+    </div>
+
+    <ol class="step-list">
+        <li><span class="step-num"></span>Mulai.</li>
+        <li><span class="step-num"></span>Masukkan nama pembeli.</li>
+        <li><span class="step-num"></span>Masukkan judul film.</li>
+        <li><span class="step-num"></span>Masukkan jumlah tiket yang dibeli.</li>
+        <li><span class="step-num"></span>Masukkan harga satu tiket.</li>
+        <li><span class="step-num"></span>Hitung total harga = jumlah tiket × harga tiket.</li>
+        <li><span class="step-num"></span>Masukkan jumlah uang yang dibayarkan.</li>
+        <li><span class="step-num"></span>Hitung kembalian = uang bayar − total harga.</li>
+        <li><span class="step-num"></span>Tampilkan struk.</li>
+        <li><span class="step-num"></span>Selesai.</li>
+    </ol>
+</div>
+
+</div>
+
+<!-- PSEUDOCODE -->
+
+<div class="card">
+    <div class="card-title">
+        <span class="dot purple"></span>Pseudocode
+    </div>
+
+<pre><span class="kw">Mulai</span>
+
+    Input <span class="var">nama_pembeli</span>
+    Input <span class="var">judul_film</span>
+    Input <span class="var">jumlah_tiket</span>
+    Input <span class="var">harga_tiket</span>
+
+    <span class="var">total_harga</span> = <span class="var">jumlah_tiket</span> * <span class="var">harga_tiket</span>
+
+    Input <span class="var">uang_bayar</span>
+
+    <span class="var">kembalian</span> = <span class="var">uang_bayar</span> - <span class="var">total_harga</span>
+
+    Output <span class="str">"===== STRUK PEMESANAN ====="</span>
+    Output <span class="var">nama_pembeli</span>
+    Output <span class="var">judul_film</span>
+    Output <span class="var">jumlah_tiket</span>
+    Output <span class="var">total_harga</span>
+    Output <span class="var">uang_bayar</span>
+    Output <span class="var">kembalian</span>
+
+<span class="kw">Selesai</span></pre>
+</div>
+
+<!-- PYTHON -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot green"></span>
+Kode Program Python
+</div>
+
+<div class="code-label">
+bioskop.py
+</div>
+
+<pre>print("===== PEMESANAN TIKET BIOSKOP =====")
+
+nama = input("Nama Pembeli : ")
+film = input("Nama Film : ")
+
+harga = int(
+input("Harga Tiket : ")
+)
+
+jumlah = int(
+input("Jumlah Tiket : ")
+)
+
+total = harga * jumlah
+
+bayar = int(
+input("Uang Bayar : ")
+)
+
+kembalian = bayar - total
+
+print("\n===== STRUK =====")
+
+print("Nama :", nama)
+print("Film :", film)
+print("Total :", total)
+print("Bayar :", bayar)
+print("Kembalian :", kembalian)
+</pre>
+
+</div>
+
+<!-- OUTPUT -->
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot teal"></span>
+Output Program
+</div>
+
+<pre>===== PEMESANAN TIKET BIOSKOP =====
+
+Nama Pembeli : Aurel
+Nama Film : Avengers
+Harga Tiket : 50000
+Jumlah Tiket : 2
+Uang Bayar : 150000
+
+===== STRUK =====
+
+Nama : Aurel
+Film : Avengers
+Total : 100000
+Bayar : 150000
+Kembalian : 50000
+</pre>
+
+</div>
+
+<!-- FLOWCHART -->
+
+<div class="card" id="sub-seq-flowchart">
+
+<div class="card-title">
+<span class="dot purple"></span>
+Flowchart Pemesanan Tiket Bioskop
+</div>
+
+<div class="flowchart">
+
+<div class="flow-start">
+Mulai
+</div>
+
+<div class="arrow-down">↓</div>
+
+<div class="flow-io">
+Input Nama
+</div>
+
+<div class="arrow-down">↓</div>
+
+<div class="flow-io">
+Input Film
+</div>
+
+<div class="arrow-down">↓</div>
+
+<div class="flow-io">
+Input Harga Tiket
+</div>
+
+<div class="arrow-down">↓</div>
+
+<div class="flow-io">
+Input Jumlah Tiket
+</div>
+
+<div class="arrow-down">↓</div>
+
+<div class="flow-process">
+Hitung Total Harga
+</div>
+
+<div class="arrow-down">↓</div>
+
+<div class="flow-io">
+Input Uang Bayar
+</div>
+
+<div class="arrow-down">↓</div>
+
+<div class="flow-process">
+Hitung Kembalian
+</div>
+
+<div class="arrow-down">↓</div>
+
+<div class="flow-output">
+Tampilkan Struk
+</div>
+
+<div class="arrow-down">↓</div>
+
+<div class="flow-end">
+Selesai
+</div>
+
+</div>
+
+</div>
+
+</section></div>
+
+
+
+<!-- ========================= -->
+<!-- BAB 4 : PERULANGAN -->
+<!-- ========================= -->
+
+<section class="section" id="sec5">
+
+<div class="section-header">
+
+<div class="section-num">
+04
+</div>
+
+<div class="section-title">
+
+<h2>Perulangan (Looping)</h2>
+
+<p>
+Perulangan digunakan untuk menjalankan
+instruksi yang sama secara berulang.
+</p>
+
+</div>
+
+</div>
+
+<!-- FOR -->
+
+<div class="card" id="sub-for">
+
+<div class="card-title">
+<span class="dot"></span>
+1. Perulangan FOR
+</div>
+
+<p>
+Perulangan FOR digunakan ketika jumlah
+pengulangan sudah diketahui sebelumnya.
+</p>
+
+<pre>total = 0
+
+for i in range(1, 6):
+    nilai = int(
+    input(f"Masukkan nilai mahasiswa ke-{i}: "))
+
+    total += nilai
+
+print("Total nilai =", total)
+</pre>
+
+<div class="alert">
+
+<strong>Output:</strong>
+
+<pre>Masukkan nilai mahasiswa ke-1: 80
+Masukkan nilai mahasiswa ke-2: 75
+Masukkan nilai mahasiswa ke-3: 90
+Masukkan nilai mahasiswa ke-4: 85
+Masukkan nilai mahasiswa ke-5: 70
+
+Total nilai = 400
+</pre>
+
+</div>
+
+</div>
+
+<!-- WHILE -->
+
+<div class="card" id="sub-while">
+
+<div class="card-title">
+<span class="dot purple"></span>
+2. Perulangan WHILE
+</div>
+
+<p>
+Digunakan ketika jumlah pengulangan
+belum diketahui dan bergantung pada kondisi.
+</p>
+
+<pre>angka = 5
+
+while angka &gt; 0:
+    print(angka)
+    angka -= 1
+
+print("Selesai")
+</pre>
+
+<div class="alert">
+
+<strong>Output:</strong>
+
+<pre>5
+4
+3
+2
+1
+
+Selesai
+</pre>
+
+</div>
+
+</div>
+
+<!-- DO WHILE -->
+
+<div class="card" id="sub-dowhile">
+
+<div class="card-title">
+<span class="dot green"></span>
+3. Perulangan DO-WHILE
+</div>
+
+<p>
+Python tidak memiliki do-while,
+sehingga biasanya dibuat menggunakan
+while True.
+</p>
+
+<pre>while True:
+
+    pilihan = input("Ketik Y untuk lanjut : ")
+
+    if pilihan == "Y":
+        print("Program dilanjutkan")
+        break
+
+    else:
+        print("Input salah")
+</pre>
+
+</div>
+
+<!-- NESTED -->
+
+<div class="card" id="sub-nested">
+
+<div class="card-title">
+<span class="dot orange"></span>
+4. Nested Loop
+</div>
+
+<p>
+Nested Loop adalah perulangan
+di dalam perulangan.
+</p>
+
+<pre>for i in range(1,6):
+
+    for j in range(1,6):
+
+        print(i*j,end="\t")
+
+    print()
+</pre>
+
+<div class="alert">
+
+<strong>Output:</strong>
+
+<pre>1  2  3  4  5
+2  4  6  8 10
+3  6  9 12 15
+4  8 12 16 20
+5 10 15 20 25
+</pre>
+
+</div>
+
+</div>
+
+<!-- KESIMPULAN -->
+
+<div class="summary-card">
+
+<div class="s-row">
+<div class="s-key">FOR</div>
+<div class="s-val">
+Jumlah perulangan diketahui
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">WHILE</div>
+<div class="s-val">
+Berdasarkan kondisi
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">DO-WHILE</div>
+<div class="s-val">
+Minimal dijalankan satu kali
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">NESTED LOOP</div>
+<div class="s-val">
+Perulangan di dalam perulangan
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BAB 5 : ARRAY -->
+<!-- ========================= -->
+
+<section class="section" id="sec6">
+
+<div class="section-header">
+
+<div class="section-num">
+05
+</div>
+
+<div class="section-title">
+
+<h2>Array</h2>
+
+<p>
+Struktur data untuk menyimpan
+banyak data dalam satu variabel.
+</p>
+
+</div>
+
+</div>
+
+<div id="sub-array-tugas">
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot"></span>
+1. Apa itu Array?
+</div>
+
+<p>
+
+Array (larik) adalah struktur data
+yang digunakan untuk menyimpan
+banyak data dalam satu variabel.
+
+</p>
+
+<pre>nilai = [80, 85, 90, 95]
+</pre>
+
+</div>
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot purple"></span>
+2. Array 1 Dimensi
+</div>
+
+<p>
+
+Array 1 dimensi memiliki
+satu deret elemen.
+
+</p>
+
+<pre>buah = ["Apel", "Jeruk", "Mangga"]
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot green"></span>
+3. Deklarasi Array
+</div>
+
+<pre>angka = [10, 20, 30, 40, 50]
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot orange"></span>
+4. Tipe Data Array
+</div>
+
+<pre>umur = [18,19,20]
+
+tinggi = [165.5, 170.2, 172.8]
+
+nama = ["Andi", "Budi", "Siti"]
+
+status = [True, False, True]
+</pre>
+
+</div>
+
+<div class="card">
+
+<div class="card-title">
+<span class="dot teal"></span>
+5. Macam-Macam Array
+</div>
+
+<div class="char-grid">
+
+<div class="char-item">
+<div class="icon">1️⃣</div>
+<div>
+<div class="label">
+Array 1 Dimensi
+</div>
+<div class="desc">
+Satu deret data
+</div>
+</div>
+</div>
+
+<div class="char-item">
+<div class="icon">2️⃣</div>
+<div>
+<div class="label">
+Array 2 Dimensi
+</div>
+<div class="desc">
+Baris dan kolom
+</div>
+</div>
+</div>
+
+<div class="char-item">
+<div class="icon">3️⃣</div>
+<div>
+<div class="label">
+Array Multidimensi
+</div>
+<div class="desc">
+Lebih dari satu dimensi
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="summary-card">
+
+<div class="s-row">
+<div class="s-key">
+Array 1D
+</div>
+<div class="s-val">
+Satu deret data
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">
+Array 2D
+</div>
+<div class="s-val">
+Baris dan kolom
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">
+Multidimensi
+</div>
+<div class="s-val">
+Lebih dari satu dimensi
+</div>
+</div>
+
+<div class="s-row">
+<div class="s-key">
+Fungsi Utama
+</div>
+<div class="s-val">
+Menyimpan banyak data
+dalam satu variabel
+</div>
+</div>
+
+</div>
+
+</div>
+<div id="sub-array-macam" class="card">
+
+<div class="card-title">
+<span class="dot green"></span>
+Macam-Macam Array
+</div>
+
+<p>Array dibedakan berdasarkan jumlah dimensinya.</p>
+
+<!-- ARRAY 1 DIMENSI -->
+
+<div class="subsection">
+
+<h4>1. Array 1 Dimensi (1D)</h4>
+
+<p>
+Array yang hanya memiliki <strong>satu baris</strong> dan menggunakan
+<strong>satu indeks</strong>.
+</p>
+
+<div class="code-label">Python</div>
+
+<pre>angka = [10, 20, 30, 40, 50]
+
+print(angka[0])   # 10
+print(angka[3])   # 40
+</pre>
+
+<p><strong>Ilustrasi</strong></p>
+
+<pre>Indeks : 0   1   2   3   4
+Data   :10  20  30  40  50
+</pre>
+
+</div>
+
+<!-- ARRAY 2 DIMENSI -->
+
+<div class="subsection purple">
+
+<h4>2. Array 2 Dimensi (2D)</h4>
+
+<p>
+Array yang terdiri dari <strong>baris dan kolom</strong>.
+</p>
+
+<div class="code-label">Python</div>
+
+<pre>matriks = [[1,2,3],[4,5,6],[7,8,9]]
+
+print(matriks[0][1])   #2
+print(matriks[2][0])   #7
+</pre>
+
+<p><strong>Ilustrasi</strong></p>
+
+<pre>      Kolom
+      0  1  2
+
+Baris
+
+0   [1,2,3]
+1   [4,5,6]
+2   [7,8,9]
+</pre>
+
+</div>
+
+<!-- ARRAY MULTIDIMENSI -->
+
+<div class="subsection green">
+
+<h4>3. Array Multidimensi (3 Dimensi atau lebih)</h4>
+
+<p>
+Array yang memiliki lebih dari dua dimensi.
+</p>
+
+<div class="code-label">Python</div>
+
+<pre>data = [[[1,2],[3,4]],[[5,6],[7,8]]]
+
+print(data[0][1][0])   #3
+print(data[1][0][1])   #6
+</pre>
+
+<p><strong>Ilustrasi</strong></p>
+
+<pre>Dimensi 1
+├── Dimensi 2
+│   ├── [1,2]
+│   └── [3,4]
+└── Dimensi 2
+    ├── [5,6]
+    └── [7,8]
+</pre>
+
+</div>
+
+<!-- RINGKASAN -->
+
+<div class="card" style="margin-top:20px;">
+
+<div class="card-title">
+<span class="dot"></span>
+Ringkasan
+</div>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Jenis Array</th>
+<th>Bentuk</th>
+<th>Contoh</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>1 Dimensi</td>
+<td>Satu baris</td>
+<td><code>[10,20,30]</code></td>
+</tr>
+
+<tr>
+<td>2 Dimensi</td>
+<td>Baris dan kolom</td>
+<td><code>[[1,2,3],[4,5,6]]</code></td>
+</tr>
+
+<tr>
+<td>Multidimensi</td>
+<td>Lebih dari dua dimensi</td>
+<td><code>[[[1,2],[3,4]],[[5,6],[7,8]]]</code></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+</main>
+
+<a href="#" class="scroll-top visible" id="scrollTop">
+↑
+</a>
+
+<script src="p.js"></script>
+
+
+</body></html>
